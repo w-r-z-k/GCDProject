@@ -11,201 +11,201 @@ activity
            SITTING
            STANDING
            LAYING
-tBodyAcc.mean.X
-     mean of the X coordinate of the body accelerometer (time domain)
+tbodyacc.mean.x
+     mean of the x coordinate of the body accelerometer (time domain)
           -1.00000000...1.00000000
-tBodyAcc.mean.Y
-     mean of the Y coordinate of the body accelerometer (time domain)
+tbodyacc.mean.y
+     mean of the y coordinate of the body accelerometer (time domain)
           -1.00000000...1.00000000
-tBodyAcc.mean.Z
-     mean of the Z coordinate of the body accelerometer (time domain)
+tbodyacc.mean.z
+     mean of the z coordinate of the body accelerometer (time domain)
           -1.00000000...1.00000000
-tBodyAcc.std.X
-     standard deviation of the X coordinate of the body accelerometer (time domain)
+tbodyacc.std.x
+     standard deviation of the x coordinate of the body accelerometer (time domain)
           -1.00000000...1.00000000
-tBodyAcc.std.Y
-     standard deviation of the Y coordinate of the body accelerometer (time domain)
+tbodyacc.std.y
+     standard deviation of the y coordinate of the body accelerometer (time domain)
           -1.00000000...1.00000000
-tBodyAcc.std.Z
-     standard deviation of the Z coordinate of the body accelerometer (time domain)
+tbodyacc.std.z
+     standard deviation of the z coordinate of the body accelerometer (time domain)
           -1.00000000...1.00000000
-tGravityAcc.mean.X
-     mean of the X coordinate of the gravity accelerometer (time domain)
+tgravityacc.mean.x
+     mean of the x coordinate of the gravity accelerometer (time domain)
           -1.00000000...1.00000000
-tGravityAcc.mean.Y
-     mean of the Y coordinate of the gravity accelerometer (time domain)
+tgravityacc.mean.y
+     mean of the y coordinate of the gravity accelerometer (time domain)
           -1.00000000...1.00000000
-tGravityAcc.mean.Z
-     mean of the Z coordinate of the gravity accelerometer (time domain)
+tgravityacc.mean.z
+     mean of the z coordinate of the gravity accelerometer (time domain)
           -1.00000000...1.00000000
-tGravityAcc.std.X
-     standard deviation of the X coordinate of the gravity accelerometer (time domain)
+tgravityacc.std.x
+     standard deviation of the x coordinate of the gravity accelerometer (time domain)
           -1.00000000...1.00000000
-tGravityAcc.std.Y
-     standard deviation of the Y coordinate of the gravity accelerometer (time domain)
+tgravityacc.std.y
+     standard deviation of the y coordinate of the gravity accelerometer (time domain)
           -1.00000000...1.00000000
-tGravityAcc.std.Z
-     standard deviation of the Z coordinate of the gravity accelerometer (time domain)
+tgravityacc.std.z
+     standard deviation of the z coordinate of the gravity accelerometer (time domain)
           -1.00000000...1.00000000
-tBodyAccJerk.mean.X
-     mean of the X coordinate of the body accelerometer jerk (time domain)
+tbodyaccjerk.mean.x
+     mean of the x coordinate of the body accelerometer jerk (time domain)
           -1.00000000...1.00000000
-tBodyAccJerk.mean.Y
-     mean of the Y coordinate of the body accelerometer jerk (time domain)
+tbodyaccjerk.mean.y
+     mean of the y coordinate of the body accelerometer jerk (time domain)
           -1.00000000...1.00000000
-tBodyAccJerk.mean.Z
-     mean of the Z coordinate of the body accelerometer jerk (time domain)
+tbodyaccjerk.mean.z
+     mean of the z coordinate of the body accelerometer jerk (time domain)
           -1.00000000...1.00000000
-tBodyAccJerk.std.X
-     standard deviation of the X coordinate of the body accelerometer jerk (time domain)
+tbodyaccjerk.std.x
+     standard deviation of the x coordinate of the body accelerometer jerk (time domain)
           -1.00000000...1.00000000
-tBodyAccJerk.std.Y
-     standard deviation of the Y coordinate of the body accelerometer jerk (time domain)
+tbodyaccjerk.std.y
+     standard deviation of the y coordinate of the body accelerometer jerk (time domain)
           -1.00000000...1.00000000
-tBodyAccJerk.std.Z
-     standard deviation of the Z coordinate of the body accelerometer jerk (time domain)
+tbodyaccjerk.std.z
+     standard deviation of the z coordinate of the body accelerometer jerk (time domain)
           -1.00000000...1.00000000
-tBodyGyro.mean.X
-     mean of the X coordinate of the body gyroscope (time domain)
+tbodygyro.mean.x
+     mean of the x coordinate of the body gyroscope (time domain)
           -1.00000000...1.00000000
-tBodyGyro.mean.Y
-     mean of the Y coordinate of the body gyroscope (time domain)
+tbodygyro.mean.y
+     mean of the y coordinate of the body gyroscope (time domain)
           -1.00000000...1.00000000
-tBodyGyro.mean.Z
-     mean of the Z coordinate of the body gyroscope (time domain)
+tbodygyro.mean.z
+     mean of the z coordinate of the body gyroscope (time domain)
           -1.00000000...1.00000000
-tBodyGyro.std.X
-     standard deviation of the X coordinate of the body gyroscope (time domain)
+tbodygyro.std.x
+     standard deviation of the x coordinate of the body gyroscope (time domain)
           -1.00000000...1.00000000
-tBodyGyro.std.Y
-     standard deviation of the Y coordinate of the body gyroscope (time domain)
+tbodygyro.std.y
+     standard deviation of the y coordinate of the body gyroscope (time domain)
           -1.00000000...1.00000000
-tBodyGyro.std.Z
-     standard deviation of the Z coordinate of the body gyroscope (time domain)
+tbodygyro.std.z
+     standard deviation of the z coordinate of the body gyroscope (time domain)
           -1.00000000...1.00000000
-tBodyGyroJerk.mean.X
-     mean of the X coordinate of the body gyroscope jerk (time domain)
+tbodygyrojerk.mean.x
+     mean of the x coordinate of the body gyroscope jerk (time domain)
           -1.00000000...1.00000000
-tBodyGyroJerk.mean.Y
-     mean of the Y coordinate of the body gyroscope jerk (time domain)
+tbodygyrojerk.mean.y
+     mean of the y coordinate of the body gyroscope jerk (time domain)
           -1.00000000...1.00000000
-tBodyGyroJerk.mean.Z
-     mean of the Z coordinate of the body gyroscope jerk (time domain)
+tbodygyrojerk.mean.z
+     mean of the z coordinate of the body gyroscope jerk (time domain)
           -1.00000000...1.00000000
-tBodyGyroJerk.std.X
-     standard deviation of the X coordinate of the body gyroscope jerk (time domain)
+tbodygyrojerk.std.x
+     standard deviation of the x coordinate of the body gyroscope jerk (time domain)
           -1.00000000...1.00000000
-tBodyGyroJerk.std.Y
-     standard deviation of the Y coordinate of the body gyroscope jerk (time domain)
+tbodygyrojerk.std.y
+     standard deviation of the y coordinate of the body gyroscope jerk (time domain)
           -1.00000000...1.00000000
-tBodyGyroJerk.std.Z
-     standard deviation of the Z coordinate of the body gyroscope jerk (time domain)
+tbodygyrojerk.std.z
+     standard deviation of the z coordinate of the body gyroscope jerk (time domain)
           -1.00000000...1.00000000
-tBodyAccMag.mean
+tbodyaccmag.mean
      mean of the body accelerometer magnitude (time domain)
           -1.00000000...1.00000000
-tBodyAccMag.std
+tbodyaccmag.std
      standard deviation of the body accelerometer magnitude (time domain)
           -1.00000000...1.00000000
-tGravityAccMag.mean
+tgravityaccmag.mean
      mean of the gravity accelerometer magnitude (time domain)
           -1.00000000...1.00000000
-tGravityAccMag.std
+tgravityaccmag.std
      standard deviation of the gravity accelerometer magnitude (time domain)
           -1.00000000...1.00000000
-tBodyAccJerkMag.mean
+tbodyaccjerkmag.mean
      mean of the body accelerometer jerk magnitude (time domain)
           -1.00000000...1.00000000
-tBodyAccJerkMag.std
+tbodyaccjerkmag.std
      standard deviation of the body accelerometer jerk magnitude (time domain)
           -1.00000000...1.00000000
-tBodyGyroMag.mean
+tbodygyromag.mean
      mean of the body gyroscopemagnitude (time domain)
           -1.00000000...1.00000000
-tBodyGyroMag.std
+tbodygyromag.std
      standard deviation of the body gyroscopemagnitude (time domain)
           -1.00000000...1.00000000
-tBodyGyroJerkMag.mean
+tbodygyrojerkmag.mean
      mean of the body gyroscope jerk magnitude (time domain)
           -1.00000000...1.00000000
-tBodyGyroJerkMag.std
+tbodygyrojerkmag.std
      standard deviation of the body gyroscope jerk magnitude (time domain)
           -1.00000000...1.00000000
-fBodyAcc.mean.X
-     mean of the X coordinate of the body accelerometer (frequency domain)
+fbodyacc.mean.x
+     mean of the x coordinate of the body accelerometer (frequency domain)
           -1.00000000...1.00000000
-fBodyAcc.mean.Y
-     mean of the Y coordinate of the body accelerometer (frequency domain)
+fbodyacc.mean.y
+     mean of the y coordinate of the body accelerometer (frequency domain)
           -1.00000000...1.00000000
-fBodyAcc.mean.Z
-     mean of the Z coordinate of the body accelerometer (frequency domain)
+fbodyacc.mean.z
+     mean of the z coordinate of the body accelerometer (frequency domain)
           -1.00000000...1.00000000
-fBodyAcc.std.X
-     standard deviation of the X coordinate of the body accelerometer (frequency domain)
+fbodyacc.std.x
+     standard deviation of the x coordinate of the body accelerometer (frequency domain)
           -1.00000000...1.00000000
-fBodyAcc.std.Y
-     standard deviation of the Y coordinate of the body accelerometer (frequency domain)
+fbodyacc.std.y
+     standard deviation of the y coordinate of the body accelerometer (frequency domain)
           -1.00000000...1.00000000
-fBodyAcc.std.Z
-     standard deviation of the Z coordinate of the body accelerometer (frequency domain)
+fbodyacc.std.z
+     standard deviation of the z coordinate of the body accelerometer (frequency domain)
           -1.00000000...1.00000000
-fBodyAccJerk.mean.X
-     mean of the X coordinate of the body accelerometer jerk (frequency domain)
+fbodyaccjerk.mean.x
+     mean of the x coordinate of the body accelerometer jerk (frequency domain)
           -1.00000000...1.00000000
-fBodyAccJerk.mean.Y
-     mean of the Y coordinate of the body accelerometer jerk (frequency domain)
+fbodyaccjerk.mean.y
+     mean of the y coordinate of the body accelerometer jerk (frequency domain)
           -1.00000000...1.00000000
-fBodyAccJerk.mean.Z
-     mean of the Z coordinate of the body accelerometer jerk (frequency domain)
+fbodyaccjerk.mean.z
+     mean of the z coordinate of the body accelerometer jerk (frequency domain)
           -1.00000000...1.00000000
-fBodyAccJerk.std.X
-     standard deviation of the X coordinate of the body accelerometer jerk (frequency domain)
+fbodyaccjerk.std.x
+     standard deviation of the x coordinate of the body accelerometer jerk (frequency domain)
           -1.00000000...1.00000000
-fBodyAccJerk.std.Y
-     standard deviation of the Y coordinate of the body accelerometer jerk (frequency domain)
+fbodyaccjerk.std.y
+     standard deviation of the y coordinate of the body accelerometer jerk (frequency domain)
           -1.00000000...1.00000000
-fBodyAccJerk.std.Z
-     standard deviation of the Z coordinate of the body accelerometer jerk (frequency domain)
+fbodyaccjerk.std.z
+     standard deviation of the z coordinate of the body accelerometer jerk (frequency domain)
           -1.00000000...1.00000000
-fBodyGyro.mean.X
-     mean of the X coordinate of the body gyroscope (frequency domain)
+fbodygyro.mean.x
+     mean of the x coordinate of the body gyroscope (frequency domain)
           -1.00000000...1.00000000
-fBodyGyro.mean.Y
-     mean of the Y coordinate of the body gyroscope (frequency domain)
+fbodygyro.mean.y
+     mean of the y coordinate of the body gyroscope (frequency domain)
           -1.00000000...1.00000000
-fBodyGyro.mean.Z
-     mean of the Z coordinate of the body gyroscope (frequency domain)
+fbodygyro.mean.z
+     mean of the z coordinate of the body gyroscope (frequency domain)
           -1.00000000...1.00000000
-fBodyGyro.std.X
-     standard deviation of the X coordinate of the body gyroscope (frequency domain)
+fbodygyro.std.x
+     standard deviation of the x coordinate of the body gyroscope (frequency domain)
           -1.00000000...1.00000000
-fBodyGyro.std.Y
-     standard deviation of the Y coordinate of the body gyroscope (frequency domain)
+fbodygyro.std.y
+     standard deviation of the y coordinate of the body gyroscope (frequency domain)
           -1.00000000...1.00000000
-fBodyGyro.std.Z
-     standard deviation of the Z coordinate of the body gyroscope (frequency domain)
+fbodygyro.std.z
+     standard deviation of the z coordinate of the body gyroscope (frequency domain)
           -1.00000000...1.00000000
-fBodyAccMag.mean
+fbodyaccmag.mean
      mean of the body accelerometer magnitude (frequency domain)
           -1.00000000...1.00000000
-fBodyAccMag.std
+fbodyaccmag.std
      standard deviation of the body accelerometer magnitude (frequency domain)
           -1.00000000...1.00000000
-fBodyBodyAccJerkMag.mean
+fbodybodyaccjerkmag.mean
      mean of the body accelerometer jerk magnitude (frequency domain)
           -1.00000000...1.00000000
-fBodyBodyAccJerkMag.std
+fbodybodyaccjerkmag.std
      standard deviation of the body accelerometer jerk magnitude (frequency domain)
           -1.00000000...1.00000000
-fBodyBodyGyroMag.mean
+fbodybodygyromag.mean
      mean of the body gyroscope magnitude (frequency domain)
           -1.00000000...1.00000000
-fBodyBodyGyroMag.std
+fbodybodygyromag.std
      standard deviation of the body gyroscope magnitude (frequency domain)
           -1.00000000...1.00000000
-fBodyBodyGyroJerkMag.mean
+fbodybodygyrojerkmag.mean
      mean of the body gyroscope jerk magnitude (frequency domain)
           -1.00000000...1.00000000
-fBodyBodyGyroJerkMag.std
+fbodybodygyrojerkmag.std
      standard deviation of the body gyroscope jerk magnitude (frequency domain)
           -1.00000000...1.00000000

@@ -101,7 +101,7 @@ head(y,10)
 #
 # note: I will separate the words with a period as per the Google coding standard for R
 
-selected.features$varname <- gsub("[()]","",selected.features$varname)
+selected.features$varname <- gsub("[()]","",tolower(selected.features$varname))
 selected.features$varname <- gsub("-",".",selected.features$varname)
 selected.features
 

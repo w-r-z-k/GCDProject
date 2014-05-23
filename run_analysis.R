@@ -14,7 +14,7 @@ outputfilename2="GCDProject_UCIHARTidyData_Averages.txt"
 
 # General setup work ...
 
-setwd("/home/user/Projects/DataScience/GettingAndCleaningData/Project")
+setwd("/home/user/Projects/DataScience/GettingAndCleaningData/Project/GCDProject")
 unzip("UCI HAR Dataset.zip")
 setwd("./UCI HAR Dataset")
 getwd()
@@ -98,6 +98,8 @@ head(y,10)
 #       the 'feature' names should be descriptive.
 
 # First, clean up the variable names
+#
+# note: I will separate the words with a period as per the Google coding standard for R
 
 selected.features$varname <- gsub("[()]","",selected.features$varname)
 selected.features$varname <- gsub("-",".",selected.features$varname)
@@ -125,7 +127,7 @@ write.table(final,file=outputfilename,row.names=FALSE)
 # Step 5: Creates a second, independent tidy data set with the average of each 
 # ------- variable for each activity and each subject. 
 
-install.packages("reshape2")
+install.packages("reshape2", repos='http://cran.us.r-project.org')
 library(reshape2)
 
 melt.final <- melt(final, id=c("subject", "activity"))

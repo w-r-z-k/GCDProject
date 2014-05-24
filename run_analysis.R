@@ -31,25 +31,27 @@ getwd()
 # Read in the training datasets
 setwd("./train")
 xtrain <- read.table("X_train.txt")
-ytrain <- read.table("y_train.txt")
+activity.train <- read.table("y_train.txt")
 subject.train <- read.table("subject_train.txt")
+
+train <- cbind(activity.train,subject.train,xtrain)
 
 # Read in the training datasets
 setwd("../test")
 xtest <- read.table("X_test.txt")
-ytest <- read.table("y_test.txt")
+activity.test <- read.table("y_test.txt")
 subject.test <- read.table("subject_test.txt")
+
+test <- cbind(activity.test,subject.test,xtest)
 
 # Merge the two sets of data
 
-x <- rbind(xtrain, xtest)
-y <- rbind(ytrain, ytest)
-subject <- rbind(subject.train, subject.test)
+alldata <- rbind(test,train)
 
-names(subject) <- "subject"
-str(subject)
-names(y) <- "activity.id"
-str(y)
+# Set the column labels for the first two columns
+
+names(alldata)[1] <- "activity.id"
+names(alldata)[2] <- "subject.id"
 
 # Step 2. Extracts only the measurements on the mean and standard deviation
 # ------- for each measurement. 
@@ -60,21 +62,35 @@ setwd("..")
 getwd()
 features.labels <- read.table("features.txt")
 names(features.labels) <- c("index","varname")
-features.labels
+
+# shift index over by two to accomodate the subject and the y index
+
+features.labels$index <- features.labels$index + 2
 
 # Select only those variable names which contain -mean() or -std()
 
 mean_or_std <- grep(".*-mean[(].*|.*-std[(].*",features.labels[,2],ignore.case=TRUE)
 
 selected.features <- features.labels[mean_or_std,]
-selected.features
+
+# Set the first 2 labels to match the first two columns
+
+first.column <- as.data.frame(list(1,"activity.id"))
+names(first.column) <- c("index","varname")
+
+second.column <- as.data.frame(list(2,"subject.id"))
+names(second.column) <- c("index","varname")
+
+selected.features <- rbind(first.column, second.column, selected.features)
 
 # Select the columns from the x dataframe based on the selected features 
 # determined above.
 
-x.selected <- x[selected.features$index]
-head(x.selected,10)
-str(x.selected,10)
+alldata <- alldata[,selected.features$index]
+
+if (ncol(alldata) != nrow(selected.features)) {
+  print("ERROR: alldata does not have the same # of columns as in the label vector")
+}
 
 # Step 3: Uses descriptive activity names to name the activities in the data set
 # -------
@@ -83,14 +99,17 @@ str(x.selected,10)
 
 activity.labels <- read.table("activity_labels.txt")
 names(activity.labels) <- c("activity.id","activity")
-activity.labels
 
-str(y)
+alldata <- merge(activity.labels,alldata)
 
-y <- merge(y,activity.labels)["activity"]
+# Remove the activity.id column now that we have proper activity labels
 
-head(y,10)
+alldata <- alldata[,2:ncol(alldata)]
 
+first.column <- as.data.frame(list(1,"activity"))
+names(first.column) <- c("index","varname")
+
+selected.features <- rbind(first.column, selected.features[2:nrow(selected.features),])
 
 # Step 4: Appropriately labels the data set with descriptive activity names. 
 # -------
@@ -103,26 +122,24 @@ head(y,10)
 
 selected.features$varname <- gsub("[()]","",tolower(selected.features$varname))
 selected.features$varname <- gsub("-",".",selected.features$varname)
-selected.features
 
 # Set the column names to properly describe the feature in the column
 
-names(x.selected) <- selected.features$varname
-str(x.selected)
+names(alldata) <- selected.features$varname
 
-# These should all contain 10299 rows
+# This should contain 10299 rows
 
-nrow(y)
-nrow(x.selected)
-nrow(subject)
+if (nrow(alldata) != 10299) {
+  print("ERROR: The result does not contain 10299 rows")
+}
 
 # Now we can combine the parts and write it out
 
-final <- cbind(subject,y,x.selected)
-str(final)
-
 setwd("..")
-write.table(final,file=outputfilename,row.names=FALSE)
+getwd()
+write.table(alldata,file=outputfilename,row.names=FALSE)
+
+table(alldata$activity,alldata$subject.id)
 
 # Step 5: Creates a second, independent tidy data set with the average of each 
 # ------- variable for each activity and each subject. 
@@ -130,10 +147,16 @@ write.table(final,file=outputfilename,row.names=FALSE)
 install.packages("reshape2", repos='http://cran.us.r-project.org')
 library(reshape2)
 
-melt.final <- melt(final, id=c("subject", "activity"))
+melt.alldata <- melt(alldata, id=c("activity","subject.id"))
 
-final2 <- dcast(melt.final, subject + activity ~ variable, fun.aggregate=mean)
+averaged.data <- dcast(melt.alldata, activity + subject.id ~ variable, fun.aggregate=mean)
 
-str(final2)
+nrow(averaged.data)
+head(averaged.data,5)
+str(averaged.data)
+table(averaged.data$activity,averaged.data$subject.id)
 
-write.table(final2,file=outputfilename2,row.names=FALSE)
+str(averaged.data)
+
+write.table(averaged.data,file=outputfilename2,row.names=FALSE)
+

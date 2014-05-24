@@ -1,8 +1,5 @@
 # Codebook for GCD Project
 
-subject    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unique identifier assigned for each subject  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      1...30  
 activity  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;activity performed by the subject  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      WALKING  
@@ -11,6 +8,9 @@ activity
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      SITTING  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      STANDING  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      LAYING  
+subject    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unique identifier assigned for each subject  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      1...30  
 tbodyacc.mean.x  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mean of the x coordinate of the body accelerometer (time domain)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     -1.00000000...1.00000000  

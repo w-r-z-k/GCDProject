@@ -15,13 +15,13 @@ The citation is:
 
 This project contains the following files:
                              
--README.md
--FilesToUseDiagram.png
--GCDProject_UCIHARTidyData.txt
--GCDProject_UCIHARTidyData_Averages.txt
--CodeBook.md
--run_analysis.R
--UCI HAR Dataset.zip
+* README.md
+* FilesToUseDiagram.png
+* GCDProject_UCIHARTidyData.txt
+* GCDProject_UCIHARTidyData_Averages.txt
+* CodeBook.md
+* run_analysis.R
+* UCI HAR Dataset.zip
 
 The tidy datafiles can be obtained by ruuning the R script 'run_analysis.R' via the command:
 
@@ -31,8 +31,8 @@ Various diagnostic output is shown on the screen and saved to the workspace.
 
 This will create the two files:
 
--GCDProject_UCIHARTidyData.txt: the tidy dataset which was to be produced for the project
--GCDProject_UCIHARTidyData_Averages.txt: this analysis of the data per subject per activity
+* GCDProject_UCIHARTidyData.txt: the tidy dataset which was to be produced for the project
+* GCDProject_UCIHARTidyData_Averages.txt: this analysis of the data per subject per activity
 
 It was unclear which file needed to be uploaded.  I uploaded the second one (i.e. the one with averages).
 
